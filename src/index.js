@@ -35,4 +35,100 @@ module.exports = function toReadable (number) {
           humReadNum = 'nine hundred';
           break;
       }
+      if (b===1) {
+        switch (c) {
+        case (1):
+          humReadNum += ' eleven';
+          break;
+        case (2):
+          humReadNum += ' twelve';
+          break;
+          case (3):
+          humReadNum += ' thirteen';
+          break;
+          case (4):
+          humReadNum += ' fourteen';
+          break;
+          case (5):
+          humReadNum += ' fiveteen';
+          break;
+           case (6):
+          humReadNum += ' sixteen';
+          break;
+           case (7):
+          humReadNum += ' seventeen';
+          break;
+           case (8):
+          humReadNum += ' eighteen';
+          break;
+           case (9):
+          humReadNum += ' nineteen';
+          break;
+          default:
+            humReadNum += ' ten';
+          break;
+        }
+        return humReadNum;
+      }
+      else {
+        switch (b) {
+        case (2):
+          humReadNum += ' twenty';
+          break;
+          case (3):
+          humReadNum += ' thirty';
+          break;
+          case (4):
+          humReadNum += ' fourty';
+          break;
+          case (5):
+          humReadNum += ' fivety';
+          break;
+           case (6):
+          humReadNum += ' sixty';
+          break;
+           case (7):
+          humReadNum += ' seventy';
+          break;
+           case (8):
+          humReadNum += ' eighty';
+          break;
+           case (9):
+          humReadNum += ' ninety';
+          break;
+      }
+      switch (c) {
+        case (1):
+          humReadNum += ' one';
+          break;
+        case (2):
+          humReadNum += ' two';
+          break;
+          case (3):
+          humReadNum += ' three';
+          break;
+          case (4):
+          humReadNum += ' four';
+          break;
+          case (5):
+          humReadNum += ' five';
+          break;
+           case (6):
+          humReadNum += ' six';
+          break;
+           case (7):
+          humReadNum += ' seven';
+          break;
+           case (8):
+          humReadNum += ' eight';
+          break;
+           case (9):
+          humReadNum += ' nine';
+          break;
+      }
+      }
+      if (humReadNum[0]===" ") {
+        return humReadNum.substr(1);
+      }
+      return humReadNum;
 }

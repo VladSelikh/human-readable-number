@@ -79,10 +79,10 @@ module.exports = function toReadable (number) {
           humReadNum += ' thirty';
           break;
           case (4):
-          humReadNum += ' fourty';
+          humReadNum += ' forty';
           break;
           case (5):
-          humReadNum += ' fivety';
+          humReadNum += ' fifty';
           break;
            case (6):
           humReadNum += ' sixty';

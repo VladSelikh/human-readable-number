@@ -68,6 +68,9 @@ module.exports = function toReadable (number) {
             humReadNum += ' ten';
           break;
         }
+        if (humReadNum[0]===" ") {
+          return humReadNum.substr(1);
+        }
         return humReadNum;
       }
       else {
